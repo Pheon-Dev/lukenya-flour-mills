@@ -11,6 +11,9 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--========== BOOTSTRAP ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         <title>Lukenya Flour Mills</title>
     </head>
     <body>
@@ -65,13 +68,42 @@
                         <span class="section-subtitle about__initial">About us</span>
                         <h2 class="section-title about__initial">Our Company</h2>
                         <p class="about__description">Lukenya Flour Mills is a company that specializes in Millers - Posho & Grain, The company has showed exemplary performance in services/products delivery. Lukenya Flour Mills is located in Kenya, and the address/physical location is at A109, Kenya.</p>
-                        <a href="#" class="button">Explore history</a>
+<button type="button" class="button" data-toggle="modal" data-target="quoteModal" data-whatever="@mdo">Make a Quote</button>
+
                     </div>
 
                     <img src="assets/img/miller.jpg" alt="" class="about__img">
                 </div>
             </section>
 
+<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="quoteModalLabel">New message</h5>
+        <button type="button" class="button close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="button">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
             <!--========== SERVICES ==========-->
             <!-- <section class="services section bd-container" id="services">
                 <span class="section-subtitle">Offering</span>
@@ -417,11 +449,59 @@
                         <p class="contact__description">If you want to reach us or make a quote, please feel free to contact our help desk</p>
                     </div>
 
-                    <div class="contact__button">
-                        <a href="#" class="button">Contact us now</a>
-                    </div>
+<button type="button" class="button" data-toggle="modal" data-target="contactModal" data-whatever="@mdo">Contact Us Now</button>
                 </div>
             </section>
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">New message</h5>
+        <button type="button" class="button close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name: </label>
+            <input type="text" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="company-name" class="col-form-label">Company Name:</label>
+            <input type="text" class="form-control" id="company-name">
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="col-form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject">
+          </div>
+
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="button">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
         </main>
 
         <!--========== FOOTER ==========-->
@@ -476,5 +556,10 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+
+        <!--========== BOOTSTRAP ==========-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

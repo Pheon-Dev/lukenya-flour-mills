@@ -28,3 +28,5 @@ The mills are the buildings where the flour is collected. The player can only co
 ### The player
 
 The player is the character that moves around the screen. The player can collect flour by pressing the space bar. The player can make bread by pressing the space bar again. The player can collect flour again by pressing the space bar again. The player can make bread again by pressing the space bar again.
+
+

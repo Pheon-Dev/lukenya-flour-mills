@@ -88,14 +88,76 @@
       </div>
       <div class="modal-body">
         <form>
+
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <label for="business-name" class="col-form-label">Name of Business:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
+
           <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label for="owner-name" class="col-form-label">Owner's Name:</label>
+            <input type="text" class="form-control" id="owner-name">
           </div>
+
+          <div class="form-group">
+            <label for="location" class="col-form-label">Location:</label>
+            <input type="text" class="form-control" id="location">
+          </div>
+
+          <div class="form-group">
+            <label for="product-type" class="col-form-label">Type of Product:</label>
+            <input type="text" class="form-control" id="product-type">
+          </div>
+
+          <div class="form-group">
+            <label for="quantity" class="col-form-label">Quantity:</label>
+            <input type="text" class="form-control" id="quantity">
+          </div>
+
+          <div class="form-group">
+            <label for="delivery-date" class="col-form-label">Payment Type:</label>
+          <div class="input-group mb-3">
+            <!-- <div class="input-group-prepend">
+              <label class="input-group-text" for="unitTypeGroupSelect">Unit Type:</label>
+            </div> -->
+            <select class="custom-select" id="unitTypeGroupSelect">
+              <option selected>Choose...</option>
+              <option value="1">Bales</option>
+              <option value="2">Sacks</option>
+            </select>
+          </div>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery-date">Delivery Date:</label>
+            <input id="delivery-date" class="form-control" type="date" />
+          </div>
+
+          <div class="form-group">
+            <label for="delivery-date" class="col-form-label">Payment Type:</label>
+          <div class="input-group mb-3">
+            <!-- <div class="input-group-prepend">
+              <label class="input-group-text" for="paymentTypeGroupSelect">Payment Type:</label>
+            </div> -->
+            <select class="custom-select" id="paymentTypeGroupSelect">
+              <option selected>Choose...</option>
+              <option value="1">Cash</option>
+              <option value="2">M-Pesa</option>
+              <option value="3">Cheque</option>
+            </select>
+          </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+
         </form>
       </div>
       <div class="modal-footer">
